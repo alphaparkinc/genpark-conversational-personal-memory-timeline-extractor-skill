@@ -1,0 +1,35 @@
+{
+  "name": "genpark-conversational-personal-memory-timeline-extractor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Tagless conversational personal memory stream, semantic timeline indexer & schedule extractor.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "personal-memory",
+    "semantic-timeline",
+    "schedule-extractor",
+    "tagless-notes",
+    "ph-august18"
+  ],
+  "inputs": {
+    "freeform_text_stream": {
+      "type": "string"
+    },
+    "current_timestamp_iso": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "extracted_tasks": {
+      "type": "array"
+    },
+    "semantic_entities": {
+      "type": "array"
+    },
+    "timeline_event_created": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
